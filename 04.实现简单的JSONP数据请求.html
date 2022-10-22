@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <img src="./angel.gif" alt="" id="angel" />
-  <h1>这是一个h1
-  </h1>
-  <script src="index.js"></script>
+  <script>
+    function abc(data) {
+      console.log('JSONP响应回来的数据是：')
+      console.log(data)
+    }
+  </script>
+
+  <script src="http://ajax.frontend.itheima.net:3006/api/jsonp?callback=abc&name=ls&age=30"></script>
 </body>
 
 </html>
